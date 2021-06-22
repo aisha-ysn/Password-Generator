@@ -17,6 +17,11 @@ body {
   background-color: #f9fbfd;
 }
 
+h1{
+  text-align: center;
+  color: hsl(206, 17%, 28%);
+}
+
 .container {
   padding-top: 30px;
   padding-left: 20px;
@@ -139,6 +144,15 @@ button[disabled] {
 }
 
 @media (max-width: 690px) {
+
+  body{
+    font-size: 1rem;
+  }
+
+  .card{
+    font-size: 0.8rem;
+  }
+
   .btn {
     font-size: 1rem;
     margin: 16px 0px 0px 0px;
@@ -159,6 +173,14 @@ button[disabled] {
 }
 
 @media (max-width: 500px) {
+
+body{
+  font-size: 0.8rem;
+}
+
+.card{
+  font-size: 0.8rem;
+}
 
 .btn {
   font-size: 0.8rem;
