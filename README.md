@@ -20,6 +20,8 @@ The Generator is also responsive and able to adapt to different screen sizes.
 ![Screenshot-6](https://user-images.githubusercontent.com/83360651/122857077-d4050100-d30f-11eb-892f-5d45f8f8e60b.JPG)
 
 Compatible with Mobiles.
+
+
 ![Screenshot-7](https://user-images.githubusercontent.com/83360651/122858415-25ae8b00-d312-11eb-8b3a-b0b7b360aad6.jpeg)
 ![Screenshot-8](https://user-images.githubusercontent.com/83360651/122858417-26472180-d312-11eb-868b-e6a13b51af24.jpeg)
 ![Screenshot-9](https://user-images.githubusercontent.com/83360651/122858418-26472180-d312-11eb-99bc-67f27e06964f.jpeg)
