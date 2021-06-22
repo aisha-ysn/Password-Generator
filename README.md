@@ -1,5 +1,7 @@
 # Password-Generator
 
+Link to deployed website: https://aisha-ysn.github.io/Password-Generator/
+
 This screenshot shows what the user first views on when opening up the password generator.
 
 ![Screenshot-1](https://user-images.githubusercontent.com/83360651/122856981-ab7d0700-d30f-11eb-8186-d4ce3571e0d8.JPG)
