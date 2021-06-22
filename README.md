@@ -1,3 +1,4 @@
+![resized-image-Promo](https://user-images.githubusercontent.com/83360651/122857718-d582f900-d310-11eb-8fba-d0df6fba1f75.jpeg)
 # Password-Generator
 
 This screenshot shows what the user first views on when opening up the password generator.
