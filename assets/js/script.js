@@ -3,8 +3,8 @@ var generateBtn = document.querySelector("#generate");
 
 function myFunction() {
   document.getElementById("settings").style.display = "block";
-  document.getElementById("clipboard").style.display = "block"
-}
+  document.getElementById("clipboard").style.display = "block";
+ }
 
 
 const resultEl = document.getElementById('result');
@@ -15,6 +15,8 @@ const numbersEl = document.getElementById('numbers');
 const symbolsEl = document.getElementById('symbols');
 const generateEl = document.getElementById('generate');
 const clipboard = document.getElementById('clipboard');
+
+
 
 const randomFunc = {
 	lower: getRandomLower,
