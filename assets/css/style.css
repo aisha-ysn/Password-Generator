@@ -119,7 +119,7 @@ button[disabled] {
     float: right;
 }
 
-#result {
+#password {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -158,7 +158,7 @@ button[disabled] {
     #password {
         font-size: 1rem;
     }
-    #result {
+    #password {
         font-size: 1rem;
     }
 }
@@ -181,7 +181,7 @@ button[disabled] {
     #password {
         font-size: 0.8rem;
     }
-    #result {
+    #password {
         font-size: 0.8rem;
     }
 }

@@ -1,92 +1,104 @@
 var generateBtn = document.querySelector("#generate");
+var enter;
+var confirmNumber;
+var confirmCharacter;
+var confirmUppercase;
+var confirmLowercase;
 
-function myFunction() {
-	document.getElementById("settings").style.display = "block";
-	document.getElementById("clipboard").style.display = "block";
-}
+character = '!"#@$%&,()*+;:{}[]=<>-_/\|~'
 
+number = '123456789'
+lower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
-const resultEl = document.getElementById('result');
-const lengthEl = document.getElementById('length');
-const uppercaseEl = document.getElementById('uppercase');
-const lowercaseEl = document.getElementById('lowercase');
-const numbersEl = document.getElementById('numbers');
-const symbolsEl = document.getElementById('symbols');
-const generateEl = document.getElementById('generate');
-const clipboard = document.getElementById('clipboard');
+space = [];
 
-const randomFunc = {
-	lower: getRandomLower,
-	upper: getRandomUpper,
-	number: getRandomNumber,
-	symbol: getRandomSymbol
-}
+var choices;
 
-clipboard.addEventListener('click', () => {
-	const textarea = document.createElement('textarea');
-	const password = resultEl.innerText;
+var toUpper = function(x) {
+    return x.toUpperCase();
+};
 
-	if (!password) { return; }
+capital = lower.map(toUpper);
 
-	textarea.value = password;
-	document.body.appendChild(textarea);
-	textarea.select();
-	document.execCommand('copy');
-	textarea.remove();
-	alert('Password sucessfully copied to clipboard');
+var get = document.querySelector("#generate");
+
+get.addEventListener("click", function() {
+    ps = generatePassword();
+    document.getElementById("password").placeholder = ps;
 });
 
-generate.addEventListener('click', () => {
-	const length = +lengthEl.value;
-	const hasLower = lowercaseEl.checked;
-	const hasUpper = uppercaseEl.checked;
-	const hasNumber = numbersEl.checked;
-	const hasSymbol = symbolsEl.checked;
+function generatePassword() {
 
-	resultEl.innerText = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length);
-});
+    enter = parseInt(prompt("What is your desired password length? (must be between 8 - 128)"));
 
-function generatePassword(lower, upper, number, symbol, length) {
-	let generatedPassword = '';
-	const typesCount = lower + upper + number + symbol;
-	const typesArr = [{ lower }, { upper }, { number }, { symbol }].filter(item => Object.values(item)[0]);
+    if (!enter) {
+        alert("This needs a value");
+    } else if (enter < 8 || enter > 128) {
 
-	// Doesn't have a selected type
-	if (typesCount === 0) {
-		return 'Please Select Required Criteria';
-	}
+        enter = parseInt(prompt("You must choose between 8 and 128"));
 
-	// loop
-	for (let i = 0; i < length; i += typesCount) {
-		typesArr.forEach(type => {
-			const funcName = Object.keys(type)[0];
-			generatedPassword += randomFunc[funcName]();
-		});
-	}
+    } else {
 
-	const finalPassword = generatedPassword.slice(0, length);
+        confirmNumber = confirm("Would you like  your password to contain numbers?");
+        confirmCharacter = confirm("Would you like  your password to contain special characters?");
+        confirmUppercase = confirm("Would you like  your password to contain capital letters?");
+        confirmLowercase = confirm("Would you like  your password to contain Lowercase letters?");
+    };
 
-	return finalPassword;
+    if (!confirmCharacter && !confirmNumber && !confirmUppercase && !confirmLowercase) {
+        choices = alert("Criteria selection required in order to proceed!");
+
+    } else if (confirmCharacter && confirmNumber && confirmUppercase && confirmLowercase) {
+
+        choices = character.concat(number, lower, capital);
+    } else if (confirmCharacter && confirmNumber && confirmUppercase) {
+        choices = character.concat(number, capital);
+    } else if (confirmCharacter && confirmNumber && confirmLowercase) {
+        choices = character.concat(number, lower);
+    } else if (confirmCharacter && confirmLowercase && confirmUppercase) {
+        choices = character.concat(lower, capital);
+    } else if (confirmNumber && confirmLowercase && confirmUppercase) {
+        choices = number.concat(lower, capital);
+    } else if (confirmCharacter && confirmNumber) {
+        choices = character.concat(number);
+
+    } else if (confirmCharacter && confirmLowercase) {
+        choices = character.concat(lower);
+
+    } else if (confirmCharacter && confirmUppercase) {
+        choices = character.concat(capital);
+    } else if (confirmLowercase && confirmNumber) {
+        choices = lower.concat(number);
+
+    } else if (confirmLowercase && confirmUppercase) {
+        choices = lower.concat(capital);
+
+    } else if (confirmNumber && confirmUppercase) {
+        choices = number.concat(capital);
+    } else if (confirmCharacter) {
+        choices = character;
+    } else if (confirmNumber) {
+        choices = number;
+    } else if (confirmLowercase) {
+        choices = lower;
+    } else if (confirmUppercase) {
+        choices = space.concat(capital);
+    };
+
+
+    var password = [];
+
+    for (var i = 0; i < enter; i++) {
+        var pickChoices = choices[Math.floor(Math.random() * choices.length)];
+        password.push(pickChoices);
+    }
+
+    var ps = password.join("");
+    UserInput(ps);
+    return ps;
 }
 
-function getRandomLower() {
-	return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+function UserInput(ps) {
+    document.getElementById("password").textContent = ps;
+
 }
-
-function getRandomUpper() {
-	return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
-}
-
-function getRandomNumber() {
-	return +String.fromCharCode(Math.floor(Math.random() * 10) + 48);
-}
-
-function getRandomSymbol() {
-	const symbols = '!"#@$%&,()*+;:{}[]=<>-_/\|~'
-	return symbols[Math.floor(Math.random() * symbols.length)];
-}
-
-
-const floating_btn = document.querySelector('.floating-btn');
-const close_btn = document.querySelector('.close-btn');
-const social_panel_container = document.querySelector('.social-panel-container');
