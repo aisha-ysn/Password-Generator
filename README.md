@@ -1,4 +1,3 @@
-![resized-image-Promo](https://user-images.githubusercontent.com/83360651/122857718-d582f900-d310-11eb-8fba-d0df6fba1f75.jpeg)
 # Password-Generator
 
 This screenshot shows what the user first views on when opening up the password generator.
@@ -18,10 +17,10 @@ If no criteria has been selected the user is asked to 'Please Select Required Cr
 ![Screenshot-5](https://user-images.githubusercontent.com/83360651/122857053-c9e30280-d30f-11eb-8baf-efc1af5367e5.JPG)
 
 The Generator is also responsive and able to adapt to different screen sizes.
-
 ![Screenshot-6](https://user-images.githubusercontent.com/83360651/122857077-d4050100-d30f-11eb-892f-5d45f8f8e60b.JPG)
 
 Compatible with Mobiles.
-![Screenshot-7](https://user-images.githubusercontent.com/83360651/122857081-d5cec480-d30f-11eb-88b2-e7100dfdd38c.jpeg)
-![Screenshot-8](https://user-images.githubusercontent.com/83360651/122857086-d6fff180-d30f-11eb-8ce8-a1db1babe676.jpg)
-![Screenshot-9](https://user-images.githubusercontent.com/83360651/122857096-dbc4a580-d30f-11eb-8b6c-901c60567925.jpg)
+![Screenshot-7](https://user-images.githubusercontent.com/83360651/122858415-25ae8b00-d312-11eb-8b3a-b0b7b360aad6.jpeg)
+![Screenshot-8](https://user-images.githubusercontent.com/83360651/122858417-26472180-d312-11eb-868b-e6a13b51af24.jpeg)
+![Screenshot-9](https://user-images.githubusercontent.com/83360651/122858418-26472180-d312-11eb-99bc-67f27e06964f.jpeg)
+![Screenshot-10](https://user-images.githubusercontent.com/83360651/122858421-26dfb800-d312-11eb-8bc4-5fe924314b12.jpeg)
