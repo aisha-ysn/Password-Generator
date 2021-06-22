@@ -28,3 +28,4 @@ Compatible with Mobiles.
 ![Screenshot-5](https://user-images.githubusercontent.com/83360651/122872204-04589980-d328-11eb-8973-78397055b1e8.jpeg)
 ![Screenshot-6](https://user-images.githubusercontent.com/83360651/122872206-04589980-d328-11eb-8bc8-9ad39a63e62a.jpeg)
 
+Link to the second version of the password generator: https://aisha-ysn.github.io/Password-Generator-2/
