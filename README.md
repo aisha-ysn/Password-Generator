@@ -3,7 +3,7 @@
 Link to deployed website: https://aisha-ysn.github.io/Password-Generator/
 
 Demo on how to use the prompt based password generator.
-https://user-images.githubusercontent.com/83360651/122871949-a62bb680-d327-11eb-8d01-ad8434393582.mp4
+<iframe src="https://drive.google.com/file/d/16QFr08lsVgXO36V1j3RfTrBLhY_9_RqP/preview" width="640" height="480"></iframe>
 
 This is the prompt that the user is presented with when they click the 'generate password' button for the first time.
 ![Screenshot-7](https://user-images.githubusercontent.com/83360651/122872054-ceb3b080-d327-11eb-8836-3b746cfac594.JPG)
