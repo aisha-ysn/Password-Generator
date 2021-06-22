@@ -1,201 +1,187 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html,
 body,
 .container {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  font-family: sans-serif;
-  background-color: #f9fbfd;
+    font-family: sans-serif;
+    background-color: #f9fbfd;
 }
 
-h1{
-  text-align: center;
-  color: hsl(206, 17%, 28%);
+h1 {
+    text-align: center;
+    color: hsl(206, 17%, 28%);
 }
 
 .container {
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 header {
-  text-align: center;
-  padding: 20px;
-  padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+    text-align: center;
+    padding: 20px;
+    padding-top: 0px;
+    color: hsl(206, 17%, 28%);
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 5px;
-  border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
-  font-size: 18px;
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 30px 40px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    border-width: 1px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+    color: hsl(206, 17%, 28%);
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 30px 40px;
 }
 
 .card-header::after {
-  content: " ";
-  display: block;
-  width: 100%;
-  background: #e7e9eb;
-  height: 2px;
+    content: " ";
+    display: block;
+    width: 100%;
+    background: #e7e9eb;
+    height: 2px;
 }
 
 .card-body {
-  min-height: 100px;
+    min-height: 100px;
 }
 
 #settings {
-	display: none;
-  text-align: left;
-  font-family: sans-serif;
+    display: none;
+    text-align: left;
+    font-family: sans-serif;
 }
 
 #clipboard {
-  display: none;
-
+    display: none;
 }
 
-.result{
-  display: none;
+.result {
+    display: none;
 }
 
 .card-footer {
-  text-align: center;
+    text-align: center;
 }
 
 .card-footer::before {
-  content: " ";
-  display: block;
-  width: 100%;
-  background: #e7e9eb;
-  height: 2px;
+    content: " ";
+    display: block;
+    width: 100%;
+    background: #e7e9eb;
+    height: 2px;
 }
 
 .card-footer::after {
-  content: " ";
-  display: block;
-  clear: both;
+    content: " ";
+    display: block;
+    clear: both;
 }
 
 .btn {
-  border: none;
-  background-color: hsl(360, 91%, 36%);
-  border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
-  color: hsl(0, 0%, 100%);
-  display: inline-block;
-  font-size: 22px;
-  line-height: 22px;
-  margin: 16px 16px 16px 20px;
-  padding: 14px 34px;
-  text-align: center;
-  cursor: pointer;
+    border: none;
+    background-color: hsl(360, 91%, 36%);
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
+    color: hsl(0, 0%, 100%);
+    display: inline-block;
+    font-size: 22px;
+    line-height: 22px;
+    margin: 16px 16px 16px 20px;
+    padding: 14px 34px;
+    text-align: center;
+    cursor: pointer;
 }
 
-.settings{
-text-align: center;
+.settings {
+    text-align: center;
 }
 
 button[disabled] {
-  cursor: default;
-  background: #c0c7cf;
+    cursor: default;
+    background: #c0c7cf;
 }
 
 .float-right {
-  float: right;
+    float: right;
 }
 
-
 #result {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
-  display: block;
-  width: 100%;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 85px;
-  font-size: 1.2rem;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
-  border-radius: 6px;
-  resize: inherit;
-  overflow: hidden;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    display: block;
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 85px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px dashed #c0c7cf;
+    border-radius: 6px;
+    resize: inherit;
+    overflow: hidden;
 }
 
 @media (max-width: 690px) {
-
-  body{
-    font-size: 1rem;
-  }
-
-  .card{
-    font-size: 0.8rem;
-  }
-
-  .btn {
-    font-size: 1rem;
-    margin: 16px 0px 0px 0px;
-    padding: 10px 15px;
-  }
-
-  #settings {
-    font-size: 0.8rem;
-  }
-
-  #password {
-    font-size: 1rem;
-  }
-  
-  #result{
-    font-size: 1rem;
-  }
+    body {
+        font-size: 1rem;
+    }
+    .card {
+        font-size: 0.8rem;
+    }
+    .btn {
+        font-size: 1rem;
+        margin: 16px 0px 0px 0px;
+        padding: 10px 15px;
+    }
+    #settings {
+        font-size: 0.8rem;
+    }
+    #password {
+        font-size: 1rem;
+    }
+    #result {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 500px) {
-
-body{
-  font-size: 0.8rem;
-}
-
-.card{
-  font-size: 0.8rem;
-}
-
-.btn {
-  font-size: 0.8rem;
-  margin: 16px 0px 0px 0px;
-  padding: 10px 15px;
-}
-
-#settings {
-  font-size: 0.8rem;
-}
-
-#password {
-  font-size: 0.8rem;
-}
-#result{
-  font-size: 0.8rem;
-}
+    body {
+        font-size: 0.8rem;
+    }
+    .card {
+        font-size: 0.8rem;
+    }
+    .btn {
+        font-size: 0.8rem;
+        margin: 16px 0px 0px 0px;
+        padding: 10px 15px;
+    }
+    #settings {
+        font-size: 0.8rem;
+    }
+    #password {
+        font-size: 0.8rem;
+    }
+    #result {
+        font-size: 0.8rem;
+    }
 }
