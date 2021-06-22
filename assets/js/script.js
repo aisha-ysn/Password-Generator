@@ -16,8 +16,6 @@ const symbolsEl = document.getElementById('symbols');
 const generateEl = document.getElementById('generate');
 const clipboard = document.getElementById('clipboard');
 
-
-
 const randomFunc = {
 	lower: getRandomLower,
 	upper: getRandomUpper,
@@ -56,7 +54,7 @@ function generatePassword(lower, upper, number, symbol, length) {
 	
 	// Doesn't have a selected type
 	if(typesCount === 0) {
-		return '';
+		return 'Please Select Required Criteria';
 	}
 	
 // loop
