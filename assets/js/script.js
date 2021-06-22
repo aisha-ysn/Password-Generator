@@ -1,6 +1,12 @@
 
 var generateBtn = document.querySelector("#generate");
 
+function myFunction() {
+  document.getElementById("settings").style.display = "block";
+  document.getElementById("clipboard").style.display = "block"
+}
+
+
 const resultEl = document.getElementById('result');
 const lengthEl = document.getElementById('length');
 const uppercaseEl = document.getElementById('uppercase');
@@ -28,7 +34,7 @@ clipboard.addEventListener('click', () => {
 	textarea.select();
 	document.execCommand('copy');
 	textarea.remove();
-	alert('Password copied to clipboard');
+	alert('Password sucessfully copied to clipboard');
 });
 
 generate.addEventListener('click', () => {
@@ -77,17 +83,11 @@ function getRandomNumber() {
 }
 
 function getRandomSymbol() {
-	const symbols = '!@#$%^&*(){}[]=<>/,.'
+	const symbols = '!"#@$%&,()*+;:{}[]=<>-_/\|~'
 	return symbols[Math.floor(Math.random() * symbols.length)];
 }
 
 
-
-
-
-
-
-// SOCIAL PANEL JS
 const floating_btn = document.querySelector('.floating-btn');
 const close_btn = document.querySelector('.close-btn');
 const social_panel_container = document.querySelector('.social-panel-container');

@@ -54,11 +54,19 @@ header {
   min-height: 100px;
 }
 
-.setting {
-	display: flex;
-	justify-content: left;
-	align-items: center;
-	margin: 15px 0;
+#settings {
+	display: none;
+  text-align: left;
+  font-family: sans-serif;
+}
+
+#clipboard {
+  display: none;
+
+}
+
+.result{
+  display: none;
 }
 
 .card-footer {
@@ -108,6 +116,7 @@ button[disabled] {
   float: right;
 }
 
+
 #result {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -125,7 +134,7 @@ button[disabled] {
   margin-bottom: 10px;
   border: 2px dashed #c0c7cf;
   border-radius: 6px;
-  resize: none;
+  resize: inherit;
   overflow: hidden;
 }
 
@@ -136,13 +145,35 @@ button[disabled] {
     padding: 10px 15px;
   }
 
+  #settings {
+    font-size: 0.8rem;
+  }
+
   #password {
+    font-size: 1rem;
+  }
+  
+  #result{
     font-size: 1rem;
   }
 }
 
 @media (max-width: 500px) {
-  .btn {
-    font-size: 0.8rem;
-  }
+
+.btn {
+  font-size: 0.8rem;
+  margin: 16px 0px 0px 0px;
+  padding: 10px 15px;
+}
+
+#settings {
+  font-size: 0.8rem;
+}
+
+#password {
+  font-size: 0.8rem;
+}
+#result{
+  font-size: 0.8rem;
+}
 }
