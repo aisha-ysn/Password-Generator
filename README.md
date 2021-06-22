@@ -16,6 +16,7 @@ If no criteria has been selected the user is shown a prompt which states the fol
 
 
 The Generator is also responsive and able to adapt to different screen sizes.
+![Screenshot-10](https://user-images.githubusercontent.com/83360651/122872572-8e086700-d328-11eb-9680-f882023e5715.JPG)
 
 
 Compatible with Mobiles.
